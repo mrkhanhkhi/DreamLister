@@ -16,9 +16,10 @@ class ItemCell: UITableViewCell {
     
     @IBOutlet weak var detailTf: UILabel!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    func configureCell(item:Item) {
+        titleTf.text = item.title
+        priceTF.text = "\(item.price)"
+        detailTf.text = item.details
     }
 
 }

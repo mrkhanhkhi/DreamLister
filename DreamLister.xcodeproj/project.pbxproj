@@ -26,6 +26,8 @@
 		84B693821E75F74F002019CD /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B693811E75F74F002019CD /* MaterialView.swift */; };
 		84B693841E75FA78002019CD /* tesla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84B693831E75FA78002019CD /* tesla.jpg */; };
 		84B693861E7606CE002019CD /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B693851E7606CE002019CD /* ItemCell.swift */; };
+		C689C7EA1E767FC000876CC6 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C689C7E91E767FC000876CC6 /* ItemDetailsVC.swift */; };
+		C689C7EC1E76831300876CC6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C689C7EB1E76831300876CC6 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		84B693811E75F74F002019CD /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		84B693831E75FA78002019CD /* tesla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tesla.jpg; sourceTree = "<group>"; };
 		84B693851E7606CE002019CD /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		C689C7E91E767FC000876CC6 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
+		C689C7EB1E76831300876CC6 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,10 +125,10 @@
 		8422FC8C1E75E5E600BA4A69 /* DreamLister */ = {
 			isa = PBXGroup;
 			children = (
+				C689C7E81E767F7F00876CC6 /* Controller */,
 				84B693801E75F741002019CD /* View */,
 				8422FCD01E75EF3300BA4A69 /* Model */,
 				8422FC8D1E75E5E600BA4A69 /* AppDelegate.swift */,
-				8422FC8F1E75E5E600BA4A69 /* MainVC.swift */,
 				8422FC971E75E5E600BA4A69 /* Assets.xcassets */,
 				84B693831E75FA78002019CD /* tesla.jpg */,
 				8422FCBE1E75E80B00BA4A69 /* Main.storyboard */,
@@ -179,10 +183,20 @@
 		84B693801E75F741002019CD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C689C7EB1E76831300876CC6 /* CustomTextField.swift */,
 				84B693811E75F74F002019CD /* MaterialView.swift */,
 				84B693851E7606CE002019CD /* ItemCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		C689C7E81E767F7F00876CC6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8422FC8F1E75E5E600BA4A69 /* MainVC.swift */,
+				C689C7E91E767FC000876CC6 /* ItemDetailsVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,11 +345,13 @@
 				8422FC8E1E75E5E600BA4A69 /* AppDelegate.swift in Sources */,
 				84B693771E75F66A002019CD /* Item+CoreDataClass.swift in Sources */,
 				84B6937B1E75F66A002019CD /* ItemType+CoreDataClass.swift in Sources */,
+				C689C7EA1E767FC000876CC6 /* ItemDetailsVC.swift in Sources */,
 				84B6937A1E75F66A002019CD /* Store+CoreDataProperties.swift in Sources */,
 				8422FC961E75E5E600BA4A69 /* DreamLister.xcdatamodeld in Sources */,
 				84B693781E75F66A002019CD /* Item+CoreDataProperties.swift in Sources */,
 				84B6937D1E75F66A002019CD /* Image+CoreDataClass.swift in Sources */,
 				84B6937E1E75F66A002019CD /* Image+CoreDataProperties.swift in Sources */,
+				C689C7EC1E76831300876CC6 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
